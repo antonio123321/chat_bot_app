@@ -1,0 +1,26 @@
+.env
+__pycache__/
+etc/
+Include/
+Lib/
+Scripts/
+share/
+templates_first/
+1)Chat_bot_implementation.ipynb
+book5_put_request.py
+book6_delete_request.py
+books - Copy.py
+books.py
+books2.py
+books2_paramethers.py
+books3_query_paramethers.py
+books4_post_request.py
+Chat_bot_and_image_gen5.py
+Chat_bot_throught_API.py
+Chat_bot_throught_API2.py
+Chat_bot_throught_API3.py
+Chat_bot_throught_API4.py
+chatbot+image_gen_websocket6.py
+Image_generator.py
+pyvenv.cfg
+read me.txt
