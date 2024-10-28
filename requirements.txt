@@ -6,3 +6,4 @@ python-dotenv==1.0.1
 python_multipart==0.0.12
 uvicorn==0.30.6
 websocket==0.2.1
+wsproto
