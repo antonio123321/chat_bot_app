@@ -24,8 +24,8 @@ if not openai.api_key:
     raise ValueError("No API key found in environment variables!")
 
 app=FastAPI()
-templates=Jinja2Templates(directory=r"C:\Users\anton\OneDrive\Desktop\Corsi\Chat Bot\fastapi\fastapienv\templates")
-
+# templates=Jinja2Templates(directory=r"C:\Users\anton\OneDrive\Desktop\Corsi\Chat Bot\fastapi\fastapienv\templates")
+templates = Jinja2Templates(directory="templates")
 chat_responses=[] 
 
 
