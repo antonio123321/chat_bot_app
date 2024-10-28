@@ -24,7 +24,7 @@ if not openai.api_key:
     raise ValueError("No API key found in environment variables!")
 
 app=FastAPI()
-# templates=Jinja2Templates(directory=r"C:\Users\anton\OneDrive\Desktop\Corsi\Chat Bot\fastapi\fastapienv\templates")
+# templates=Jinja2Templates(directory=r"C:\Users\anton\OneDrive\Desktop\Corsi\Chat Bot\fastapi\fastapienv\templates")#use this option when running locally
 templates = Jinja2Templates(directory="templates")
 chat_responses=[] 
 
@@ -124,7 +124,7 @@ async def create_image(request: Request, user_input: Annotated[str, Form()]):
 
 
 
-# After running the code you can run in the terminal the usual :
+# After running the code you can run in the terminal the usual (if running locally) :
 # uvicorn chatbot+image_gen_websocket_secr_key7:app --reload
 
 
@@ -142,12 +142,6 @@ async def create_image(request: Request, user_input: Annotated[str, Form()]):
 #websocket
 
 
-#Once this is done we need to install git if not present in the machine and open the comand prompt
-# next we need to publish our code on the github account creating a new repository, this allow the application 
-# to run on the internet (deploy), then a file (gitignore ) was created in the same directory of this same file . the 
-#gitignore includes all of the folders or files that has to be not included on the github.
-# then follow step by step the instructions to push in github the code in the repository. or just upload the files
-# in the github repository by drag and drop. If want to follow The instruction are either in the
-#udemi video or  in the github page just before to push the code
+
 
 #---------------------------------------------------------------------------------------------------------------------#
