@@ -30,9 +30,17 @@ chat_responses=[]
 
 
 
+# @app.get("/", response_class=HTMLResponse)
+# async def chat_page(request:Request):
+#     return templates.TemplateResponse("home.html", {"request":request,"chat_responses":chat_responses})# this keep the hystory even if you open another browser
+
 @app.get("/", response_class=HTMLResponse)
-async def chat_page(request:Request):
-    return templates.TemplateResponse("home.html", {"request":request,"chat_responses":chat_responses})
+async def chat_page(request: Request):
+    global chat_responses
+    chat_responses = []  # Use this if you want to Clear chat history                   
+    return templates.TemplateResponse("home.html", {"request": request, "chat_responses": chat_responses})
+
+
 
 chat_log=[{'role': 'system', 'content': 'You tell a joke'}]
 
