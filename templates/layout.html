@@ -12,12 +12,20 @@
     a more cleen and updatable code -->
     
     <style>
+
+        .chat-container {
+          display: flex;
+          flex-direction: column;
+          height: 80vh;
+          margin-bottom: 50px; /* Space for the input area */
+        }
         .chat-history {
           text-align: left;
           width: 100%;
           display: flex;
           flex-direction: column;
           overflow-y: auto;
+          max-height: calc(80vh - 150px);
         }
         .chat-message {
           width: fit-content;
