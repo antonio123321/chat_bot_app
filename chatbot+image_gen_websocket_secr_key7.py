@@ -42,7 +42,7 @@ async def chat_page(request: Request):
 
 
 
-chat_log=[{'role': 'system', 'content': 'You tell a joke'}]
+chat_log=[{'role': 'system', 'content': 'You tell a joke, do not be repetitive'}]
 
 
 @app.websocket("/ws")
